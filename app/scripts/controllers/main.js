@@ -1,10 +1,13 @@
 'use strict';
 
-angular.module('TickeyApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+angular.module('ticketyApp')
+  .controller('mainCtrl', function ($scope, $rootScope) {
+
+    console.log("Inside Main");
+
+    $rootScope.gameboard_page = false;
+    $rootScope.home_page = true;
+    $rootScope.how_to_page = false;
+
+  	
   });

@@ -7,15 +7,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tickety</title>
-    <meta name="description" content="">
+    <meta name="description" content="Online Tic Tac Toe">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
         <!-- endbuild -->
 </head>
-  <body>
+  <body data-ng-app="ticketyApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -26,15 +28,27 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <h1>Hello</h1> 
+  
+      <header>
+        <h1><span class="o">T</span>ic<span class="o">T</span>ac<span class="o">T</span>oe<br></h1>
+      </header>
 
+    <div data-ng-view></div>
 
-
-
-
+   <div class="buttons"> <ul>
+      <li><button data-ng-hide="gameboard_page"><a href="#/game_board">Play Now!</a></button></li>
+      <li><button data-ng-hide="how_to_page"><a href="#/how_to">Rules & Instructions</a></button></li>
+      <li><button data-ng-hide="home_page"><a href="#/">Home</a></button></li>
+    </ul> </div>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-localstorage/angular-local-storage.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/game_board.js"></script>
+        <script src="scripts/controllers/how_to.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/tickle_me.js"></script>
         <!-- endbuild -->
 </body>
 </html>

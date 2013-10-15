@@ -1,0 +1,101 @@
+h1 {
+    text-align: center;
+    font-size:90px;
+    font-family: 'Bubbler One', sans-serif;
+    margin-top: 0;
+    margin-bottom: 8px;   
+}
+
+button {
+    background-color:#ffff66; 
+    color: black;
+    font-size: 16px;
+    border: 2px solid black;
+    padding: 6px;
+    box-shadow: 4px 4px 3px #888888;
+    border-radius: 10px;
+  }
+
+
+button:hover {
+    background-color: #ffff00;
+    box-shadow: 5px 6px 4px #888888;
+}
+
+#timer {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, bold;
+    font-size: 40px;   
+    background-color: grey  ;
+    border: 3px solid #9900FF;
+    border-radius: 10px; 
+    padding: 5px;
+    color: white;
+    padding: 0px;
+}
+
+
+#timer button{
+    font-size: 12px;
+    color: purple;
+    box-shadow: none;
+    font-family: Arial, bold;
+}
+
+#gameboard {
+    margin: 0 auto;
+    width: 240px;  
+    height: 240px;
+    overflow: hidden;  
+}
+
+.cell {
+    font-size: 70px;
+    float: left;
+    width: 78px;
+    height: 78px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'BubblerOne', sans-serif;
+}
+
+.row {
+    clear: both;
+}
+
+.lt, .mt, .rt, .lc, .mc, .rc {border-bottom: solid #222222;}
+.lt, .lc, .lb, .mt, .mc, .mb {border-right: solid #222222;}
+
+.x {color: black;}
+.o {color: #9900FF;}
+
+
+
+.howTo {
+    font-family: Verdana;
+  }
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -20px;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #9900FF;
+    font-weight: bold;
+}
+
