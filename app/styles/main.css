@@ -1,3 +1,7 @@
+#gamePage {
+    max-width: 700em;
+}
+
 h1 {
     text-align: center;
     font-size:90px;
@@ -14,6 +18,8 @@ button {
     padding: 6px;
     box-shadow: 4px 4px 3px #888888;
     border-radius: 10px;
+    /*width: auto;
+    float: left;*/
   }
 
 
@@ -22,26 +28,37 @@ button:hover {
     box-shadow: 5px 6px 4px #888888;
 }
 
+.buttons {
+    text-align: center;
+    margin: 10px;
+}
+
+.buttons button {
+    margin: 14px;
+}
+
 #timer {
-    width: 200px;
+    width: 120px;
+    height: 52px;
     margin: auto;
     text-align: center;
     font-family: Arial, bold;
-    font-size: 40px;   
+    font-size: 20px;   
     background-color: grey  ;
     border: 3px solid #9900FF;
-    border-radius: 10px; 
-    padding: 5px;
+    border-radius: 12px; 
+    padding: 2.5px;
     color: white;
     padding: 0px;
 }
 
 
 #timer button{
-    font-size: 12px;
+    font-size: 6px;
     color: purple;
     box-shadow: none;
     font-family: Arial, bold;
+    border: 1px solid black;
 }
 
 #gameboard {
@@ -49,6 +66,7 @@ button:hover {
     width: 240px;  
     height: 240px;
     overflow: hidden;  
+    float: center;
 }
 
 .cell {
@@ -77,14 +95,14 @@ button:hover {
     font-family: Verdana;
   }
 
-ul {
+.buttons ul {
     text-align: center;
     list-style-type: none;
     padding-left: 0;
     margin-top: -20px;
 }
 
-li {
+.buttons li {
     padding-bottom: 8px;
 }
 
@@ -99,3 +117,35 @@ a:hover {
     font-weight: bold;
 }
 
+#leaderBoard {
+    width: 120px;
+    margin: auto;
+    margin-bottom: 40px;
+    font-family: Arial;
+    font-size: 10px;   
+    background-color: grey;
+    border: 3px solid #9900FF;
+    border-radius: 12px; 
+    color: white;
+    text-align: center;
+}
+
+#leaderBoard ul {
+    list-style-type: none;
+    text-indent: -40px;
+}
+
+h2 {
+   font-size: 14px;
+   padding: 0px;
+   margin-bottom: 4px;
+}
+
+h3 {
+    font-family: arial bolder;
+    font-size: 20px;
+    max-width: 300px;
+    border: dashed 2px #9900FF;
+    text-align: center;
+    float: center;
+}

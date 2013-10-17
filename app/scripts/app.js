@@ -156,16 +156,24 @@ angular.module('LocalStorageModule').value('prefix', 'gaWdiDatabase');
 
 
 
-angular.module('ticketyApp', ['LocalStorageModule'])
+angular.module('ticketyApp', ['LocalStorageModule', 'firebase'])
 	.config(function($routeProvider){
 		$routeProvider
-			.when('/game_board', {
+			.when('/computer_game_board', {
+				templateUrl: 'views/computer_game_board.html',
+				controller: 'computerGameBoardCtrl'
+			})
+			.when('/game_board/:id/:mySymbol', {
 				templateUrl: 'views/game_board.html',
 				controller: 'gameBoardCtrl'
 			})
 			.when('/how_to', {
 				templateUrl: 'views/how_to.html',
 				controller: 'HowToCtrl'
+			})
+			.when('/match_player', {
+				templateUrl: 'views/match_player.html',
+				controller: 'MatchPlayerCtrl'
 			})
 			.when('/', {
 				templateUrl: 'views/main.html',

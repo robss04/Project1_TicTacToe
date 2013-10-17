@@ -5,9 +5,7 @@ angular.module('ticketyApp')
 
     console.log("Inside Main");
 
-    $rootScope.gameboard_page = false;
-    $rootScope.home_page = true;
-    $rootScope.how_to_page = false;
+    $rootScope.current_page = 'home_page';
 
   	
   });

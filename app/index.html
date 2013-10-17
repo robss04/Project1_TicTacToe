@@ -3,7 +3,9 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+  <div id = "gamePage">
+
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tickety</title>
@@ -35,20 +37,27 @@
 
     <div data-ng-view></div>
 
-   <div class="buttons"> <ul>
-      <li><button data-ng-hide="gameboard_page"><a href="#/game_board">Play Now!</a></button></li>
-      <li><button data-ng-hide="how_to_page"><a href="#/how_to">Rules & Instructions</a></button></li>
-      <li><button data-ng-hide="home_page"><a href="#/">Home</a></button></li>
-    </ul> </div>
+   <div class="buttons"> <footer>
+      <button data-ng-show="current_page!='match_player'"><a href='/#/match_player'>Play Opponent</a></button>
+      <button data-ng-show="current_page!='computer_game_board'"><a href="#/computer_game_board">Play the Computer</a></button>
+      <button data-ng-show="current_page!='how_to'"><a href="#/how_to">Rules & Instructions</a></button>
+      <button data-ng-show="current_page!='home_page'"><a href="#/">Home</a></button>
+    </footer> </div>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-localstorage/angular-local-storage.js"></script>
+       <script src="bower_components/angular-localstorage/angular-local-storage.js"></script>
+        <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/game_board.js"></script>
+        <script src="scripts/controllers/computer_game_board.js"></script>        
         <script src="scripts/controllers/how_to.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/match_player.js"></script>
         <script src="scripts/controllers/tickle_me.js"></script>
         <!-- endbuild -->
 </body>
+
+</div>
 </html>
