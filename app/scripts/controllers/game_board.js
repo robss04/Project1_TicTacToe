@@ -32,7 +32,7 @@ angular.module('ticketyApp')
                         if ($scope.testForLose($scope.mySymbol, snapshot.val())) {
                             console.log("opponent won. you lost.");
                             $timeout(function() {
-                                window.alert("You lost!");
+                                window.alert("You lost, try again!");
                             }, 50);
                             $scope.endGame = true;
                         } else if ($scope.testForCat()) {

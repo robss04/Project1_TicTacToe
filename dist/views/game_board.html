@@ -1,0 +1,54 @@
+<div id="gamePage">
+      
+      <div id="gameboard">
+        <div class="row">
+          <div class="cell lt {{cell[0]}}" id="cell1" data-ng-class="{x: 'x'==cells[0], o: 'o'==cells[0]}" data-ng-click="listenForMyClick(0)">{{gameBoard[0]}}</div>
+          <div class="cell mt {{cell[1]}}" id="cell2" data-ng-class="{x: 'x'==cells[1], o: 'o'==cells[1]}" data-ng-click="listenForMyClick(1)">{{gameBoard[1]}}</div>
+          <div class="cell rt {{cell[2]}}" id="cell3" data-ng-class="{x: 'x'==cells[2], o: 'o'==cells[2]}" data-ng-click="listenForMyClick(2)">{{gameBoard[2]}}</div>
+        </div>
+
+        <div class="row">
+          <div class="cell lc {{cell[3]}}" id="cell4" data-ng-class="{x: 'x'==cells[3], o: 'o'==cells[3]}" data-ng-click="listenForMyClick(3)">{{gameBoard[3]}}</div>
+          <div class="cell mc {{cell[4]}}" id="cell5" data-ng-class="{x: 'x'==cells[4], o: 'o'==cells[4]}" data-ng-click="listenForMyClick(4)">{{gameBoard[4]}}</div>
+          <div class="cell rc {{cell[5]}}" id="cell6" data-ng-class="{x: 'x'==cells[5], o: 'o'==cells[5]}" data-ng-click="listenForMyClick(5)">{{gameBoard[5]}}</div>
+        </div>
+
+        <div class="row">
+          <div class="cell lb {{cell[6]}}" id="cell7" data-ng-class="{x: 'x'==cells[6], o: 'o'==cells[6]}" data-ng-click="listenForMyClick(6)">{{gameBoard[6]}}</div>
+          <div class="cell mb {{cell[7]}}" id="cell8" data-ng-class="{x: 'x'==cells[7], o: 'o'==cells[7]}" data-ng-click="listenForMyClick(7)">{{gameBoard[7]}}</div>
+          <div class="cell rb {{cell[8]}}" id="cell9" data-ng-class="{x: 'x'==cells[8], o: 'o'==cells[8]}" data-ng-click="listenForMyClick(8)">{{gameBoard[8]}}</div>
+        </div>
+      </div> 
+
+<br><br><br><br>
+<!-- 
+<button data-ng-show="gameEnded">Restart</button> -->
+<div id="timer">
+ {{minutes}} : {{seconds}} <br>
+  <button data-ng-click="startTimer()">START</button>
+  <button data-ng-click="endTimer()">STOP</button>
+  <button data-ng-click="resetTimer()">RESET</button>
+</div>
+
+<br>
+
+<div id="leaderBoard">
+<ul>
+  <li><h2>LeaderBoard!<h2></h2></h2></li>
+  <li data-ng-repeat="(name, score) in leaderData.name">{{name}}:  {{score}}</li>
+</ul>
+</div>
+
+<!-- 
+  <button data-ng-click="getName()">Enter Name Here</button>
+  <button data-ng-click="addWinToLeaderBoard()">Add Win!</button>
+
+ -->
+</div>
+  <!-- if end result true, then clearBoard -->
+
+  <!-- <div class="button"> -->
+    <!-- <a href="index.html"> -->
+        <!-- <button type="button" trong>refresh</strong></button>  -->
+    <!-- </a> -->
+  <!-- </div> -->
