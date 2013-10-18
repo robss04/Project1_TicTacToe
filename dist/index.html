@@ -2,46 +2,71 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <div id="gamePage">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<div id="gamePage">
 
     <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tickety</title>
-    <meta name="description" content="Online Tic Tac Toe">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tickety</title>
+        <meta name="description" content="Online Tic Tac Toe">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="styles/5c2e5e34.main.css">
-</head>
-  <body data-ng-app="ticketyApp">
-    <!--[if lt IE 7]>
+    </head>
+
+    <body data-ng-app="ticketyApp">
+        <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!--[if lt IE 9]>
+        <!--[if lt IE 9]>
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-  
-      <header>
-        <h1><span class="o">T</span>ic<span class="o">T</span>ac<span class="o">T</span>oe<br></h1>
-      </header><br><br>
+        <!-- Add your site or application content here -->
 
-    <div data-ng-view=""></div>
+        <header>
+            <h1>
+                <span class="o">T</span>ic
+                <span class="o">T</span>ac
+                <span class="o">T</span>oe
+                <br>
+            </h1>
+        </header>
+        <br>
+        <br>
 
-   <div class="buttons"> <footer>
-      <button data-ng-show="current_page!='match_player'"><a href="/#/match_player">Play Opponent</a></button>
-      <button data-ng-show="current_page!='computer_game_board'"><a href="#/computer_game_board">Play the Computer</a></button>
-      <button data-ng-show="current_page!='how_to'"><a href="#/how_to">Rules & Instructions</a></button>
-      <button data-ng-show="current_page!='home_page'"><a href="#/">Home</a></button>
-    </footer> </div>
+        <div data-ng-view=""></div>
 
-        <script src="scripts/a6bdc11b.scripts.js"></script>
-</body>
+        <div class="buttons">
+            <footer>
+                <button data-ng-show="current_page!='match_player'"><a href="/#/match_player">Play Opponent</a>
+                </button>
+                <button data-ng-show="current_page!='computer_game_board'"><a href="#/computer_game_board">Play the Computer</a>
+                </button>
+                <button data-ng-show="current_page!='how_to'"><a href="#/how_to">Rules & Instructions</a>
+                </button>
+                <button data-ng-show="current_page!='home_page'"><a href="#/">Home</a>
+                </button>
+            </footer>
+        </div>
+
+
+        <!-- <script src="bower_components/jquery/jquery.js"></script>   -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script src="bower_components/angular-localstorage/angular-local-storage.js"></script>
+        <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js"></script>
+
+
+        <script src="scripts/ec747ef3.scripts.js"></script>
+    </body>
 
 </div>
+
 </html>
